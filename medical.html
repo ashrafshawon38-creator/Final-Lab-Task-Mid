@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Appointment Registration System</title>
+    <link rel="stylesheet" href="medical.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HealthyLife Medical Center</h1>
+        <h2>Patient Appointment Registration System</h2>
+
+        <form id="myForm">
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Enter your first name">
+            <small id="firstNameError" class="error"></small>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Enter your last name">
+            <small id="lastNameError" class="error"></small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+            <small id="emailError" class="error"></small>
+
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <small id="passwordError" class="error"></small>
+
+
+            <label>Gender</label>
+            <div class="radio-group">
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+
+            </div>
+            <small id="genderError" class="error"></small>
+
+            <label>Preferred Service</label>
+
+            <div class="checkbox-group">
+
+                <input type="checkbox" id="Health Checkup" name="Preferred Service" value="Health Checkup">
+                <label for="Health Checkup">Health Checkup</label>
+
+                <input type="checkbox" id="Vaccination" name="Preferred Service" value="Vaccination">
+                <label for="Vaccination">Vaccination</label>
+
+                <input type="checkbox" id="Emergency" name="Preferred Service" value="Emergency">
+                <label for="Emergency">Emergency</label>
+
+                <input type="checkbox" id="Surgery" name="Preferred Service" value="Surgery">
+                <label for="Surgery">Surgery</label>
+
+            </div>
+            <small id="serviceError" class="error"></small>
+
+
+            <label for="Doctors department">Department</label>
+            <select id="department">
+                <option value="">-- Select Department --</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Gynecology">Gynecology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Neurology">Neurology</option>
+            </select>
+            
+            <small id="departmentError" class="error"></small>
+
+
+            <label for="healthdescription">Health Description</label>
+            <textarea id="healthdescription" rows="4" placeholder="Enter your health description"></textarea>
+            <small id="healthdescriptionError" class="error"></small>
+
+            <button type="submit">Submit For Appointment</button>
+
+        </form>
+
+    </div>
+
+    <script src="medical.js"></script>
+
+</body>
+
+</html>
